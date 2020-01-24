@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Montserrat";
+    src:("/Montserrat.ttf");
+		font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src:("/Montserrat-Bold.ttf");
+		font-weight: bold;
+}
+@font-face {
+    font-family: "Open Sans";
+    src:("/OpenSans-Bold.ttf") format("ttf");
+}
+body{
+	margin: 0;
+}
+p{
+	margin: 0;
+	font-size: 12pt;
+	-webkit-text-fill-color: #B5B5B5;
+	color: #B5B5B5;
+}
+a{
+	all: unset;
+	cursor: pointer;
+}
+h1{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	margin: 0px;
+}
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20pt;
+	margin: 0;
+}
+h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	font-weight: normal;
+	font-size: 14px;
+}
+.side{
+	display: inline-block;
+	position: fixed;
+	background-color: white;
+	height: 100%;
+	width: 256px;
+	padding: 32px;
+	box-sizing: border-box;
+}
+.content{
+	display: inline-block;
+	position: absolute;
+	background-color: white;
+	left: 256px;
+	right: 0;
+}
+.grid{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 15px;
+}
+.item-container{
+	position: relative;
+	background-color: white;
+	max-width: 400px;
+	min-width: 300px;
+	margin: 15px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.item-img{
+	max-width: 400px;
+	min-width: 400px;
+	max-height: 300px;
+}
+.item-text{
+	padding: 10px 20px 15px 20px;
+	font-family: "Montserrat";
+}
+.description{
+	margin-top: 4px;
+	height: 64px;
+}
+.item-text .date{
+	text-align: right;
+}
+.item-bottom{
+  background-image: linear-gradient(-180deg, #EFEFEF 0%, #EEEEEE 68%, #D0CDCD 100%);
+	//background-color: #EFEFEF;
+	height: 10px;
+}
+.icon-linkedin{
+	position: absolute;
+	background-image: url(../images/linkedin.svg);
+	background-size: auto;
+	background-repeat: none;
+	width: 32px;
+	height: 32px;
+	bottom: 32px
+
+}
+.icon-resume{
+	position: absolute;
+	background-image: url(../images/resume.svg);
+	background-size: auto;
+	background-repeat: none;
+	width: 32px;
+	height: 32px;
+	bottom: 32px;
+	left: 74px;
+}
+.icon-link{
+	position: absolute;
+	background-image: url(../images/link.svg);
+	background-size: auto;
+	background-repeat: none;
+	width: 22px;
+	height: 22px;
+	right: 10px;
+	top: 10px;
+}

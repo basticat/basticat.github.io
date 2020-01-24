@@ -1,0 +1,27 @@
+body{
+  padding: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.container div{
+  width: 40%;
+  height: auto;
+  padding: 10px;
+}
+.container div img{
+  width: 100%;
+  height: auto;
+}

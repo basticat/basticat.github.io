@@ -1,0 +1,90 @@
+.sectionButton{
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	font-size: 64px;
+	margin: 0 60px 0 0;
+	color: #d4d4d4;
+	cursor: pointer;
+	transition: .4s;
+}
+.sectionButton:hover{
+	transition: .4s;
+	color: black;
+}
+.sectionButton.selected{
+	color: black;
+}
+
+.process.in{
+  transition: all 1s;
+  animation-duration: 1s;
+  //animation-name: slidein;
+  transform: translate(0px,0px);
+}
+.project.in{
+	transition: all 1s;
+  animation-duration: 1s;
+  //animation-name: slideinfromleft;
+  transform: translate(0px,0px);
+}
+
+.process.out{
+  transition: all 1s;
+  animation-duration: 1s;
+  //animation-name: slideouttoright;
+  transform: translate(200%,0px);
+	display: none;
+}
+.project.out{
+  transition: all 1s;
+  animation-duration: 1s;
+  //animation-name: slideouttoleft;
+  transform: translate(200%,0px);
+	display: none;
+}
+
+.outout{
+  transform: translate(100%,0px);
+}
+
+@keyframes slidein {
+  from{
+    transform: translate(100%,0px);
+  }
+  to{
+    transform: translate(0px,0px);
+  }
+}
+@keyframes slideinfromleft {
+  from{
+    transform: translate(-100%,0px);
+  }
+  to{
+    transform: translate(0px,0px);
+  }
+}
+@keyframes slideouttoright {
+  from{
+    transform: translate(0%,0px);
+  }
+  to{
+    transform: translate(200%,0px);
+  }
+	100%{
+		position: fixed;
+	}
+}
+@keyframes slideouttoleft {
+  from{
+    transform: translate(0%,0px);
+  }
+  to{
+    transform: translate(-200%,0px);
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+	.sectionButton{
+		font-size: 50px;
+	}
+}

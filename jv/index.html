@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="master.css">
+		<link rel="stylesheet" href="interaction.css">
+		<title>JV</title>
+		<style media="screen">
+			#title{
+				max-width: 250px
+			}
+			.row-title{
+				height: auto;
+				display: flex;
+				margin: 0 0 20px 0;
+				flex-direction: row;
+				flex: 1 1 0;
+				align-items: flex-end;
+			}
+			.header{
+				margin: 10px 0 0 0;
+			}
+			.title2{
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 300;
+				font-size: 14px;
+				margin: 0 0px 0 0;
+			}
+			.spans{
+				padding: 0 20px;
+				display: flex;
+				align-items: flex-end;
+				flex: 1 1 0;
+			}
+			.spans2{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				justify-content: space-between;
+				flex: 1 1 0;
+			}
+			.line{
+				max-width: 100%;
+			}
+			.img-cover{
+				border-radius: 50%;
+				height: 250px;
+				width: 250px;
+				background-position: center;
+				background-size: cover;
+				box-sizing: border-box;
+				padding: 20px 20px 20px 20px;
+				margin-bottom: 10px;
+			}
+			.ia{
+				justify-content: center;
+				text-decoration: none;
+				color: white;
+				transition: .2s;
+				transform: translate(0,0px);
+				margin: 20px 20px 20px 20px;
+			}
+			.ia:hover{
+				color: black;
+				transition: .2s;
+				transform: translate(0,-10px);
+			}
+			.rb{
+				height: 270px;
+				width: 270px;
+			}
+			.img-cover-bottom-left{
+				margin-left: 200px;
+			}
+			.img-cover-bottom-right{
+				margin-right: 200px;
+			}
+			.img-cover-container{
+				display: flex;
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			.sm-icon{
+				width: 35px;
+				height: 35px;
+				margin: 0 5px -5px 5px;
+
+			}
+			.top-container{
+				flex-direction: row;
+				align-items: flex-end;
+				justify-content: space-between;
+				display: flex;
+				flex: 1 1 0;
+				padding: 0 0px;
+				box-sizing: border-box;
+			}
+			.img-cover-container{
+				margin-bottom: 80px;
+			}
+			.stat{
+				font-size: 18px;
+				text-align: center;
+				padding: 0 100px;
+			}
+			.img-cover-text{
+				color: inherit;
+				text-align: center;
+				font-size: 16px;
+				font-weight: 700;
+			}
+			@media only screen and (max-width: 1250px) {
+				#title{
+					max-width: none;
+					width: 100%;
+					margin: 20px 0;
+				}
+				.row-title{
+					height: auto;
+					flex-direction: column;
+					align-items: flex-start;
+					flex-basis: auto;
+					align-items: flex-start;
+				}
+				.top-container{
+					flex-direction: row;
+					align-items: flex-end;
+					width: 100%;
+				}
+				.spans{
+					flex-direction: column;
+					align-items: flex-start;
+					padding: 0;
+				}
+				.spans2{
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					flex: 1 1 0;
+				}
+				.sm-icon{
+					width: 30px;
+					height: 30px;
+					margin-bottom: -5px;
+				}
+				.img-cover-container{
+					margin-bottom: 20px;
+				}
+				.stat{
+					padding: 0;
+				}
+				.img-cover-bottom-left{
+					margin-left: 0;
+				}
+				.img-cover-bottom-right{
+					margin-right: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="">
+			<div class="body-container">
+				<div class="width-container header">
+					<div class="row-title">
+						<img id="title" src="images/jvv.png" alt="">
+						<div class="top-container">
+							<div class="spans">
+								<span class="title2">A brand designer! <a href="#i">(more)</a></span>
+								<div class="spans2">
+									<span class="title2">jv.vidal97@gmail.com</span>
+									<span class="title2">912 445 1742</span>
+								</div>
+							</div>
+							<div class="icons">
+								<a href="#"><img class="sm-icon" src="images/inin.svg" alt=""></a>
+								<a href="#"><img class="sm-icon" src="images/ln.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<img class="line" src="images/line.png" alt="">
+					</div>
+					<div class="img-cover-container">
+						<a href="dti.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images6.jpg);border-radius: 0;"></div><p class="img-cover-text">Developmental Therapy Institute</p></div></a>
+						<a href="me.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images7.png);"></div><p class="img-cover-text">About Me</p></div></a>
+						<a href="llsf.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images.jpg);"></div><p class="img-cover-text">Long Live Short Film</p></div></a>
+						<a href="liet.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images5.jpg);"></div><p class="img-cover-text">Love in Every Tongue</p></div></a>
+						<a href="redblack.html" class="ia"><div class="inner-ia"><div class="img-cover rb" style="background-image: url(./images/Cover-Images4.png);border-radius: 0;"></div><p class="img-cover-text">Red&Black</p></div></a>
+					</div>
+					<div class="row-noMargin" style="justify-content:center;">
+						<p id="i" class="stat">Hi there, my name is Joao (yep, tricky little name). I am a brand designer! My job is to use visual tools to help your ideas come to life. I am constantly exploring modern trends and mixing medias to create efficient, fun, and original projects that range from editorial, to motion graphics. Feel free to look through my work, and contact me at any time!</p>
+					</div>
+				</div>
+
+				<!-- up arrow -->
+				<div class="width-container">
+					<div class="row align-center">
+						<a href="#"><img class="up-arrow" src="images/Arrow-back.png" alt=""></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript">
+			var ci = Array.from(document.getElementsByClassName("inner-ia"));
+			var x = 0;
+			var y = 0;
+			var range = 20;
+			ci.forEach(function(el){
+				x = getRandomInt(-range,range);
+				y = getRandomInt(-range,range);
+		  	el.setAttribute("style",el.style.cssText + "transform:translate(" + x + "px," + y + "px);");
+			})
+			function getRandomInt(min,max) {
+			  return Math.floor(Math.random() * (max - min) + min);
+			}
+		</script>
+	</body>
+</html>

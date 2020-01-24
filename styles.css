@@ -1,0 +1,157 @@
+
+
+html {
+
+}
+body{
+    overflow:auto;
+    margin: 0px;
+    overflow-x: hidden;
+}
+h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+a{
+  color: white;
+  text-decoration: none;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  font-weight: bold;
+ /* ...and now for the proper property */
+ transition:.5s;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  color: grey;
+}
+.mail{
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  color: white;
+  z-index: 10;
+  //text-align: center;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20;
+}
+.displayBox{
+  overflow: hidden;
+  outline: 4px solid white;
+  //background-color: #ffb399;
+  background-color: #021533;
+  width: 100%;
+  height: 100%;
+}
+.displayBox-trigger{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: inherit;
+  z-index: 2;
+}
+.displayBox-cover{
+  position: relative;
+  z-index: 1;
+  background: red;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+.displayBox-content{
+  position: absolute;
+  word-wrap: break-all;
+  top: 0px;
+  height: auto;
+  width: 100%;
+  height: 100%;
+  //background-color: grey;
+  padding: 16px;
+  box-sizing:border-box;
+}
+.displayBox-content .content{
+  position: relative;
+  word-wrap: break-all;
+  top: 0px;
+  height: auto;
+}
+.displayBox-bottom{
+  position: absolute;
+  bottom: 0px;
+  //left: 0px;
+  //margin: 16px;
+}
+#firstContainer{
+  //position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+}
+#secondContainer{
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+}
+#boyCanvas{
+    position: absolute;
+    z-index: -1;
+}
+#boyContainer{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    background-color: Black;
+}
+#contentContainer{
+    opacity: 1;
+    width: 900px;
+    margin: 0 auto;
+    top: 500px;
+    height: 200%;
+    z-index: 2;
+    overflow: visible;
+}
+#flexContainer{
+  position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    //outline: 4px white dotted;
+    max-width: 1024px;
+    margin: 0px auto;
+    padding-top: 175px;
+}
+.flexBox{
+    position: relative;
+    color: white;
+    opacity: 1;
+    width: 440px;
+    height: 330px;
+    z-index: 2;
+    display: inline-block;
+    margin: 25px;
+}
+#gradient{
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  z-index: 3;
+  background: linear-gradient(#8F9D6A, transparent);
+}
