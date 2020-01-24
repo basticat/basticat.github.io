@@ -8,14 +8,14 @@
 		<title>JV</title>
 		<style media="screen">
 			#title{
-				max-width: 250px
+				max-width: 250px;
+				flex-basis: auto;
 			}
 			.row-title{
-				height: auto;
 				display: flex;
 				margin: 0 0 20px 0;
 				flex-direction: row;
-				flex: 1 1 0;
+				flex: 1 1 auto;
 				align-items: flex-end;
 			}
 			.header{
@@ -31,14 +31,14 @@
 				padding: 0 20px;
 				display: flex;
 				align-items: flex-end;
-				flex: 1 1 0;
+				flex: 1 1 auto;
 			}
 			.spans2{
 				display: flex;
 				flex-direction: column;
 				align-items: flex-end;
 				justify-content: space-between;
-				flex: 1 1 0;
+				flex: 1 1 auto;
 			}
 			.line{
 				max-width: 100%;
@@ -111,34 +111,40 @@
 				font-size: 16px;
 				font-weight: 700;
 			}
+			.sq-text{
+				margin-top: -20px;
+			}
 			@media only screen and (max-width: 1250px) {
 				#title{
 					max-width: none;
 					width: 100%;
 					margin: 20px 0;
+					box-sizing: border-box;
+					display:inline-block;
+					flex-basis: auto;
 				}
 				.row-title{
-					height: auto;
 					flex-direction: column;
-					align-items: flex-start;
+					//align-items: flex-start;
 					flex-basis: auto;
-					align-items: flex-start;
 				}
 				.top-container{
 					flex-direction: row;
 					align-items: flex-end;
 					width: 100%;
+					flex-basis: auto;
 				}
 				.spans{
 					flex-direction: column;
 					align-items: flex-start;
 					padding: 0;
+					flex-basis: auto;
 				}
 				.spans2{
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start;
-					flex: 1 1 0;
+					flex: 1 1 auto;
 				}
 				.sm-icon{
 					width: 30px;
@@ -156,6 +162,11 @@
 				}
 				.img-cover-bottom-right{
 					margin-right: 0;
+				}
+				.ia{
+					color: black;
+					margin: 0px;
+					margin-bottom: 20px;
 				}
 			}
 		</style>
@@ -181,14 +192,16 @@
 						</div>
 					</div>
 					<div class="row">
-						<img class="line" src="images/line.png" alt="">
+						<div class="img-container">
+							<img class="line" src="images/line.png" alt="">
+						</div>
 					</div>
 					<div class="img-cover-container">
-						<a href="dti.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images6.jpg);border-radius: 0;"></div><p class="img-cover-text">Developmental Therapy Institute</p></div></a>
+						<a href="dti.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images6.jpg);border-radius: 0;"></div><p class="img-cover-text sq-text">Developmental Therapy Institute</p></div></a>
 						<a href="me.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images7.png);"></div><p class="img-cover-text">About Me</p></div></a>
 						<a href="llsf.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images.jpg);"></div><p class="img-cover-text">Long Live Short Film</p></div></a>
 						<a href="liet.html" class="ia"><div class="inner-ia"><div class="img-cover" style="background-image: url(./images/Cover-Images5.jpg);"></div><p class="img-cover-text">Love in Every Tongue</p></div></a>
-						<a href="redblack.html" class="ia"><div class="inner-ia"><div class="img-cover rb" style="background-image: url(./images/Cover-Images4.png);border-radius: 0;"></div><p class="img-cover-text">Red&Black</p></div></a>
+						<a href="redblack.html" class="ia"><div class="inner-ia"><div class="img-cover rb" style="background-image: url(./images/Cover-Images4.png);border-radius: 0;"></div><p class="img-cover-text sq-text">Red&Black</p></div></a>
 					</div>
 					<div class="row-noMargin" style="justify-content:center;">
 						<p id="i" class="stat">Hi there, my name is Joao (yep, tricky little name). I am a brand designer! My job is to use visual tools to help your ideas come to life. I am constantly exploring modern trends and mixing medias to create efficient, fun, and original projects that range from editorial, to motion graphics. Feel free to look through my work, and contact me at any time!</p>

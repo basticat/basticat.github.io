@@ -220,6 +220,13 @@ img{
 }
 
 @media only screen and (max-width: 1250px) {
+	.back-arrow{
+		max-width:100px;
+		position: relative;
+		top: 10px;
+		left: 10px;
+		z-index: 100;
+	}
 	.vid{
 		flex-grow: 1;
 		height:auto;
@@ -244,7 +251,7 @@ img{
 	}
 	h1{
 		font-weight: 700;
-		font-size: 46px;
+		font-size: 36px;
 	}
 	.body-container{
 		display:flex;
@@ -254,7 +261,7 @@ img{
 	}
 	.img-container{
 		width: 100%;
-		padding: 20px 0;
+		padding: 16px 0;
 		flex-basis: auto;
 	}
 	.width-container{
@@ -263,7 +270,7 @@ img{
 		padding: 0 32px;
 	}
 	.title{
-		margin: 80px 0 80px 0px;
+		margin: 20px 0 80px 0px;
 	}
 	.row{
 		height: auto;
@@ -276,7 +283,7 @@ img{
 	.row-lessMargin{
 		height: auto;
 		flex-direction: column;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		align-items: flex-start;
 		flex-basis: auto;
 		align-items: center;
