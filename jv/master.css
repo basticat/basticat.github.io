@@ -219,7 +219,10 @@ img{
 	left: 20px;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1000px) {
+	.img-container.more-padding{
+		padding-bottom: 40px;
+	}
 	.back-arrow{
 		max-width:100px;
 		position: relative;
