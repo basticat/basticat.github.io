@@ -117,12 +117,6 @@ img{
 	margin: 0 0 80px 0;
 	flex-direction: row;
 }
-.column{
-	display: flex;
-	flex-direction: column;
-	flex-basis: auto;
-	flex: 1 1 auto;
-}
 .row-lessMargin{
 	display: flex;
 	margin: 0 0 20px 0;
@@ -219,7 +213,7 @@ img{
 	left: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1160px) {
 	.img-container.more-padding{
 		padding-bottom: 40px;
 	}
